@@ -1,0 +1,16 @@
+{
+  "name": "1144ty",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "npm run eleventy --serve",
+    "watch": "npm run eleventy --watch",
+    "build": "eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "eleventy-plugin-tailwindcss": "^0.3.0"
+  }
+}
