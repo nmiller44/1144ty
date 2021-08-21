@@ -2,6 +2,7 @@ const pluginTailwindCSS = require("eleventy-plugin-tailwindcss")
 const site = require("./src/_data/site.js")
 
 module.exports = function(eleventyConfig) {
+    eleventyConfig.addPassthroughCopy("src/static");
 
     // PLUGINS
     eleventyConfig.addPlugin(pluginTailwindCSS, {
