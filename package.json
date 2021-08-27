@@ -5,9 +5,9 @@
   "license": "MIT",
   "scripts": {
     "start": "npm run serve",
-    "serve": "npm run eleventy --serve",
-    "watch": "npm run eleventy --watch",
-    "build": "eleventy"
+    "serve": "npx @11ty/eleventy --serve",
+    "watch": "npx @11ty/eleventy --watch",
+    "build": "npx @11ty/eleventy"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",

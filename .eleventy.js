@@ -2,7 +2,7 @@ const pluginTailwindCSS = require("eleventy-plugin-tailwindcss")
 const site = require("./src/_data/site.js")
 
 module.exports = function(eleventyConfig) {
-    eleventyConfig.addPassthroughCopy("src/static");
+    eleventyConfig.addPassthroughCopy({ "public": "/" });
 
     // PLUGINS
     eleventyConfig.addPlugin(pluginTailwindCSS, {
@@ -12,7 +12,8 @@ module.exports = function(eleventyConfig) {
     return {
         dir: {
             input: 'src',
-            output: 'dist'
+            output: 'dist',
+            layouts: '_layouts'
         },
         templateFormats: ['md', 'njk', 'html'],
         htmlTemplateEngine: 'njk'
