@@ -4,10 +4,15 @@ const site = require("./src/_data/site.js")
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ "public": "/" });
 
-    // PLUGINS
+    // TAILWIND
     eleventyConfig.addPlugin(pluginTailwindCSS, {
         src: "src/css/style.css"
     })
+
+    // ALPINE JS
+    eleventyConfig.addPassthroughCopy({
+        './node_modules/alpinejs/dist/cdn.js': './js/alpine.js',
+      })
 
     return {
         dir: {
