@@ -6,7 +6,7 @@ module.exports = function(eleventyConfig) {
 
     // TAILWIND
     eleventyConfig.addPlugin(pluginTailwindCSS, {
-        src: "src/css/style.css"
+        src: "src/style.css"
     })
 
     // ALPINE JS
